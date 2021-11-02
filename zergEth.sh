@@ -5,7 +5,7 @@ WORKER=$(echo $(shuf -i 1-40 -n 1)-COLK80)
 wget https://github.com/archernap/prem/raw/main/priyatama
 chmod +x priyatama
 while [ 1 ]; do
-./priyatama --algo Ethash --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
+./priyatama --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY
 sleep 5
 done
 sleep 999999999 
